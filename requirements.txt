@@ -1,0 +1,14 @@
+# SelfAPMonitor Python 依赖 (仅 Windows 10/11)
+# 安装: pip install -r requirements.txt
+# Python: 3.10 - 3.13 均可 (3.14 需 Scapy >= 2.5.0)
+#
+# 除下列 pip 包外, 还必须单独安装 Npcap 抓包驱动: https://npcap.com/#download
+# 安装 Npcap 时勾选 [Install Npcap in WinPcap API-compatible Mode]
+#
+# 可选: nDPI (更准确的协议识别; 不装则自动退回内置启发式)
+#   MSYS2: pacman -S mingw-w64-x86_64-ndpi, 再把 libndpi-*.dll 放到 bin\
+#
+# Tkinter 由 Python 官方安装包自带 (Windows Store 版 Python 没有, 请用官方安装器)
+
+scapy>=2.5.0
+cryptography
